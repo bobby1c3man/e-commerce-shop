@@ -10,7 +10,7 @@ import { CartContext } from '../../contexts/cart.context';
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 
-import { NavigationContainer, LogoContainer, NavLinks, NavLink } from './navigation.styles';
+import { NavigationContainer, NavLinks, NavLink, LogoContainer } from './navigation.styles';
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
@@ -20,7 +20,7 @@ const Navigation = () => {
     <Fragment>
       <NavigationContainer>
         <LogoContainer to="/">
-          <CrwnLogo />
+          <CrwnLogo className="logo" />
         </LogoContainer>
         <NavLinks>
           <NavLink to="/shop">SHOP</NavLink>
