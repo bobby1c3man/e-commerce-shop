@@ -11,6 +11,7 @@ import './index.scss';
 
 import reportWebVitals from './reportWebVitals';
 
+// Importing the necessary modules and components
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
